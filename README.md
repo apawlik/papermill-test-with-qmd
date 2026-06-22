@@ -2,4 +2,4 @@ This repository has been created to test the GitHub Actions for [Automated Noteb
 
 #### Funding acknowledgement
 
-**This work is supported by Jupyter4NFDI as part of Base4NFDI (DFG project no.521453681).**
+This work is supported by Jupyter4NFDI as part of Base4NFDI (DFG project no.521453681).
