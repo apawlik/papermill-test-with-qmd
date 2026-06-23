@@ -65,6 +65,7 @@ Quarto supports advanced code block options like:
 - `out-width` to control output size
 - `fig-align` for figure alignment
 
-```{r plot-example, echo=FALSE, fig-align=center, out-width="80%"}
+```{r plot-example, echo=FALSE,  fig.align="center", out.width="80%"}
 # This code runs, but the source is hidden
 plot(1:10, main = "Hidden code, visible output")
+```
