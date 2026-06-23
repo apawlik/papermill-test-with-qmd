@@ -1,0 +1,70 @@
+---
+title: "Quarto example file"
+format: html
+---
+
+
+This document showcases features that are available in Quarto but not in R Markdown (`rmd`). These include:
+
+- `include` directives with code blocks
+- `callout` syntax for notes, warnings, and tips
+- Advanced code block options like `line-numbers`, `highlight`, and `include`
+
+---
+
+#### `include` Directive with Code Blocks
+
+You can include external code files directly into your document with syntax highlighting and line numbers — **this is not possible in R Markdown**.
+
+
+```{include=example.py, language=python, line-numbers=true, caption="Python script: example.py"}
+```
+
+
+---
+
+#### Callout Syntax 
+
+Quarto supports **callout blocks** for notes, warnings, tips, and more.
+
+```{callout-note}
+This is a **note**. Use this to highlight helpful information.
+```
+
+```{callout-warning}
+This is a **warning**. Be careful when running this code!
+```
+
+```{callout-tip}
+Use `callout` blocks to guide readers through complex steps.
+```
+
+```{callout-important}
+This is **important** — don't skip this step!
+```
+
+---
+
+#### Include External Files with Custom Options
+
+You can include any file (e.g., `.R`, `.py`, `.txt`) and control how it's rendered.
+
+```{include=README.md, line-numbers=true, caption="Project README"}
+```
+
+> This works for any file type and supports syntax highlighting via `language`.
+
+---
+
+#### Quarto-Specific Code Block Options
+
+Quarto supports advanced code block options like:
+
+- `eval=false` to skip execution
+- `echo=false` to hide code
+- `out-width` to control output size
+- `fig-align` for figure alignment
+
+```{r plot-example, echo=FALSE, fig-align=center, out-width="80%"}
+# This code runs, but the source is hidden
+plot(1:10, main = "Hidden code, visible output")
